@@ -1,8 +1,10 @@
+import AppNavBar from "./components/AppNavBar";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <main className="App">
+      <AppNavBar />
+    </main>
   );
 }
 
