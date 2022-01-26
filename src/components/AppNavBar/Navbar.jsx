@@ -1,11 +1,13 @@
 import React from "react";
 import "./Navbar.scss";
 import manageLogo from "../../images/logo.svg";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <img src={manageLogo} alt="Manage" className="navbar__logo" />
+      <MobileMenu />
       <ul className="navbar__links">
         <li className="navbar__link">Pricing</li>
         <li className="navbar__link">Product</li>
