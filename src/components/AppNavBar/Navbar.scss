@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-inline: fnc.rem(24);
+  position: relative;
 
   &__logo {
     display: block;
@@ -48,6 +48,37 @@
         &:last-child {
           transform: rotate(-48deg);
         }
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    left: fnc.rem(-24);
+    top: 0;
+    width: 200vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.5); //change to gradient
+  }
+
+  .mobile_menu {
+    position: absolute;
+    left: 0;
+    top: fnc.rem(103);
+    width: 100%;
+    background-color: var(--color-neutral-100);
+    padding-block: 1.5rem;
+    border-radius: fnc.rem(3);
+
+    &__links {
+      text-align: center;
+      font-weight: 700;
+      color: var(--color-primary-200);
+    }
+
+    &__link {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
       }
     }
   }
