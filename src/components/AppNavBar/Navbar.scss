@@ -56,9 +56,13 @@
     position: absolute;
     left: fnc.rem(-24);
     top: 0;
-    width: 200vw;
-    height: 200vh;
-    background-color: rgba(0, 0, 0, 0.5); //change to gradient
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
   }
 
   .mobile_menu {

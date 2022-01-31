@@ -6,10 +6,23 @@ import MobileMenu from "./MobileMenu";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleOpen = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+    document.body.classList.toggle("open");
+    document
+      .querySelector("#mobile-menu")
+      ?.setAttribute("aria-expanded", (!mobileMenuOpen).toString());
+  };
+
   return (
     <nav className="navbar">
       <img src={manageLogo} alt="Manage" className="navbar__logo" />
-      {mobileMenuOpen && <MobileMenu />}
+      {mobileMenuOpen && (
+        <>
+          <div className="overlay hide-for-desktop" />
+          <MobileMenu />
+        </>
+      )}
       <ul className="navbar__links hide-for-mobile">
         <li className="navbar__link">Pricing</li>
         <li className="navbar__link">Product</li>
@@ -31,7 +44,7 @@ const Navbar = () => {
         id="mobile-menu"
         aria-label="open-menu"
         aria-expanded="false"
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        onClick={handleOpen}
       >
         <span></span>
         <span></span>

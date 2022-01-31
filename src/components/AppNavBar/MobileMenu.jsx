@@ -3,7 +3,6 @@ import React from "react";
 const MobileMenu = () => {
   return (
     <>
-      <div className="overlay hide-for-desktop" />
       <div className="mobile_menu hide-for-desktop">
         <ul className="mobile_menu__links">
           <li className="mobile_menu__link">Pricing</li>
