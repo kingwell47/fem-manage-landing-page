@@ -19,7 +19,7 @@ const Navbar = () => {
       <img src={manageLogo} alt="Manage" className="navbar__logo" />
       {mobileMenuOpen && (
         <>
-          <div className="overlay hide-for-desktop" />
+          <div className="navbar__overlay hide-for-desktop" />
           <MobileMenu />
         </>
       )}
