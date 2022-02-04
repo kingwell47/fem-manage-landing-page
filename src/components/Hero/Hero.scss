@@ -1,24 +1,47 @@
 @use "../../functions" as fnc;
 
 .hero_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: fnc.rem(40);
 
   background-image: url(../../images/bg-tablet-pattern.svg);
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
   &__image {
     display: block;
-    width: 100%;
+    width: 110%;
     height: auto;
+    margin-bottom: fnc.rem(16);
   }
 
   &__heading {
+    font-size: fnc.rem(38);
+    font-weight: 700;
+    color: var(--color-primary-200);
+    text-align: center;
+    letter-spacing: fnc.rem(-2);
+    margin-bottom: fnc.rem(8);
   }
 
   &__text {
+    color: var(--color-neutral-300);
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: fnc.rem(32);
   }
 
   &__cta {
+    border: none;
+    border-radius: fnc.rem(22);
+    font-weight: 700;
+    width: fnc.rem(137);
+    padding: fnc.rem(14);
+    color: var(--color-neutral-200);
+    background-color: var(--color-primary-100);
+    box-shadow: fnc.rem(0) fnc.rem(5) fnc.rem(10) hsla(12, 88%, 59%, 0.75);
   }
 }
