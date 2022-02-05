@@ -1,0 +1,29 @@
+@use "../../functions" as fnc;
+
+.features {
+  margin-top: fnc.rem(103);
+
+  &__heading {
+    font-size: fnc.rem(33);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary-200);
+    letter-spacing: fnc.rem(-2);
+  }
+
+  &__text {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-neutral-300);
+    font-size: fnc.rem(15);
+    line-height: 1.7;
+  }
+
+  &__list {
+    &_item {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
