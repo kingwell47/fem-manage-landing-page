@@ -26,4 +26,34 @@
       }
     }
   }
+
+  &__card {
+    &_header {
+      display: flex;
+      align-items: center;
+    }
+
+    &_number {
+      margin-right: fnc.rem(8);
+      padding: fnc.rem(8) fnc.rem(20);
+      color: var(--color-neutral-100);
+      background-color: var(--color-primary-100);
+      border-radius: fnc.rem(22);
+    }
+
+    &_title {
+      font-weight: 700;
+      color: var(--color-primary-200);
+      background-color: var(--color-neutral-200);
+      letter-spacing: fnc.rem(-1);
+    }
+
+    &_text {
+      margin-top: fnc.rem(10);
+      color: var(--color-neutral-300);
+      font-size: fnc.rem(15);
+      line-height: 1.7;
+      letter-spacing: fnc.rem(-1);
+    }
+  }
 }
