@@ -9,6 +9,7 @@
     text-align: center;
     color: var(--color-primary-200);
     letter-spacing: fnc.rem(-2);
+    padding-inline: fnc.rem(24);
   }
 
   &__text {
@@ -17,9 +18,11 @@
     color: var(--color-neutral-300);
     font-size: fnc.rem(15);
     line-height: 1.7;
+    padding-inline: fnc.rem(24);
   }
 
   &__list {
+    padding-inline: fnc.rem(12);
     &_item {
       &:not(:last-child) {
         margin-bottom: 2rem;
@@ -31,11 +34,23 @@
     &_header {
       display: flex;
       align-items: center;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: fnc.rem(39);
+        background-color: var(--color-neutral-200);
+        position: absolute;
+        z-index: -1;
+        left: fnc.rem(33);
+      }
     }
 
     &_number {
+      width: fnc.rem(66);
       margin-right: fnc.rem(8);
-      padding: fnc.rem(8) fnc.rem(20);
+      padding: fnc.rem(9) fnc.rem(24);
       color: var(--color-neutral-100);
       background-color: var(--color-primary-100);
       border-radius: fnc.rem(22);
@@ -44,16 +59,15 @@
     &_title {
       font-weight: 700;
       color: var(--color-primary-200);
-      background-color: var(--color-neutral-200);
       letter-spacing: fnc.rem(-1);
     }
 
     &_text {
       margin-top: fnc.rem(10);
       color: var(--color-neutral-300);
-      font-size: fnc.rem(15);
-      line-height: 1.7;
-      letter-spacing: fnc.rem(-1);
+      font-size: fnc.rem(14);
+      line-height: 2;
+      // letter-spacing: fnc.rem();
     }
   }
 }

@@ -11,9 +11,12 @@
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
+
+  padding-inline: fnc.rem(12);
+
   &__image {
     display: block;
-    width: 110%;
+    width: 100%;
     height: auto;
     margin-bottom: fnc.rem(16);
   }
@@ -32,6 +35,7 @@
     text-align: center;
     line-height: 1.7;
     margin-bottom: fnc.rem(32);
+    padding-inline: fnc.rem(24);
   }
 
   &__cta {

@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  padding-inline: fnc.rem(24);
 
   &__logo {
     display: block;
