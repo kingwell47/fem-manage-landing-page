@@ -22,10 +22,11 @@
   }
 
   &__list {
+    margin-top: fnc.rem(60);
     padding-inline: fnc.rem(12);
     &_item {
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: fnc.rem(40);
       }
     }
   }
