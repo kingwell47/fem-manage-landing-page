@@ -3,6 +3,28 @@
   &__cta {
     height: fnc.rem(405);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-primary-100);
+    color: var(--color-neutral-100);
+    text-align: center;
+    font-size: fnc.rem(24);
+    font-weight: 500;
+    padding-inline: fnc.rem(30);
+    background-image: url(../../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    &_button {
+      border: none;
+      border-radius: fnc.rem(22);
+      font-weight: 700;
+      width: fnc.rem(137);
+      padding: fnc.rem(14);
+      color: var(--color-primary-100);
+      background-color: var(--color-neutral-100);
+    }
   }
 }
