@@ -1,0 +1,45 @@
+@use "../../functions" as fnc;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: fnc.rem(32);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary-200);
+    letter-spacing: fnc.rem(-1);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: var(--color-neutral-100);
+    padding-inline: fnc.rem(20);
+    &_avatar {
+      height: fnc.rem(72);
+      width: auto;
+    }
+
+    &_name {
+      font-weight: 700;
+      color: var(--color-primary-200);
+    }
+
+    &_text {
+      text-align: center;
+      font-size: fnc.rem(14);
+      color: var(--color-neutral-300);
+      line-height: 2;
+    }
+  }
+
+  &__cta {
+  }
+}
