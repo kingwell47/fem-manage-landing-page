@@ -29,22 +29,22 @@ const FEATURES_LIST = [
 const Features = () => {
   const FeaturesCard = ({ number, title, text }) => (
     <div className="features__card">
-      <div className="features__card_header">
+      <h3 className="features__card_header">
         <div className="features__card_number">{number}</div>
         <div className="features__card_title">{title}</div>
-      </div>
-      <div className="features__card_text">{text}</div>
+      </h3>
+      <p className="features__card_text">{text}</p>
     </div>
   );
 
   return (
     <div className="features">
-      <div className="features__heading">What’s different about Manage?</div>
-      <div className="features__text">
+      <h2 className="features__heading">What’s different about Manage?</h2>
+      <p className="features__text">
         Manage provides all the functionality your team needs, without the
         complexity. Our software is tailor-made for modern digital product
         teams.
-      </div>
+      </p>
       <ul className="features__list">
         {FEATURES_LIST.map((item, index) => (
           <li className="features__list_item" key={index}>

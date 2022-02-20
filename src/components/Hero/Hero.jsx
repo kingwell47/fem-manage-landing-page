@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className="hero_section">
       <img src={heroImage} alt="hero" className="hero_section__image" />
-      <div className="hero_section__heading">
+      <h1 className="hero_section__heading">
         Bring everyone together to build better products.
-      </div>
+      </h1>
       <div className="hero_section__text">
         Manage makes it simple for software teams to plan day-to-day tasks while
         keeping the larger team goals in view.

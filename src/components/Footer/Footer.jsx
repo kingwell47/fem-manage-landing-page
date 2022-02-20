@@ -1,12 +1,19 @@
 import React from "react";
+import "./Footer.scss";
+
+const FooterCTA = () => {
+  return (
+    <div className="footer__cta">
+      <h2>Simplify how your team works today.</h2>
+      <button className="footer__cta_button">Get Started</button>
+    </div>
+  );
+};
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__cta">
-        Simplify how your team works today.
-        <button className="footer__cta_button">Get Started</button>
-      </div>
+    <footer className="footer">
+      <FooterCTA />
       <div className="footer__bottom">
         <img src="" alt="Manage" className="footer__logo" />
         <ul className="footer__socials">
@@ -39,7 +46,7 @@ const Footer = () => {
           Copyright 2020. All Rights Reserved
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

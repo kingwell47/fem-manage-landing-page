@@ -1,0 +1,8 @@
+@use "../../functions" as fnc;
+.footer {
+  &__cta {
+    height: fnc.rem(405);
+    width: 100%;
+    background-color: var(--color-primary-100);
+  }
+}

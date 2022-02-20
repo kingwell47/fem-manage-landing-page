@@ -40,6 +40,30 @@
     }
   }
 
+  &__indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: fnc.rem(20);
+
+    span {
+      display: block;
+      background-color: var(--color-primary-100);
+      width: fnc.rem(10);
+      height: fnc.rem(10);
+      border-radius: 50%;
+    }
+  }
+
   &__cta {
+    border: none;
+    border-radius: fnc.rem(22);
+    font-weight: 700;
+    margin-top: fnc.rem(40);
+    width: fnc.rem(137);
+    padding: fnc.rem(14);
+    color: var(--color-neutral-200);
+    background-color: var(--color-primary-100);
+    box-shadow: fnc.rem(0) fnc.rem(5) fnc.rem(10) hsla(12, 88%, 59%, 0.75);
   }
 }
