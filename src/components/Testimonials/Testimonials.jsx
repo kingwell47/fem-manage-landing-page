@@ -49,9 +49,13 @@ const Testimonials = () => {
   return (
     <div className="testimonials">
       <h2 className="testimonials__heading">What they’ve said</h2>
-      {TESTIMONIALS_DATA.map((item, index) => (
-        <TestimonialsCard {...item} key={index} />
-      ))}
+      <div className="testimonials__cards">
+        <div className="testimonials__cards_container">
+          {TESTIMONIALS_DATA.map((item, index) => (
+            <TestimonialsCard {...item} key={index} />
+          ))}
+        </div>
+      </div>
       <div className="testimonials__indicators">
         <span></span>
         <span></span>
